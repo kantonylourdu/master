@@ -1,75 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="364" started-at="2019-09-08T08:24:21Z" finished-at="2019-09-08T08:24:21Z">
+  <suite name="Default suite" duration-ms="60536" started-at="2019-09-08T10:14:59Z" finished-at="2019-09-08T10:16:00Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.leafBot.testng.api.base.ProjectSpecificMethods@369f73a2]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.leafBot.testcases.testcase@2b2948e2]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="364" started-at="2019-09-08T08:24:21Z" finished-at="2019-09-08T08:24:21Z">
-      <class name="com.leafBot.testng.api.base.ProjectSpecificMethods">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.leafBot.testng.api.base.ProjectSpecificMethods@369f73a2]" name="startReport" is-config="true" duration-ms="504" started-at="2019-09-08T08:24:20Z" finished-at="2019-09-08T08:24:21Z">
+    <test name="Default test" duration-ms="60536" started-at="2019-09-08T10:14:59Z" finished-at="2019-09-08T10:16:00Z">
+      <class name="com.leafBot.testcases.testcase">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.leafBot.testcases.testcase@2b2948e2]" name="startReport" is-config="true" duration-ms="874" started-at="2019-09-08T10:14:58Z" finished-at="2019-09-08T10:14:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.leafBot.testng.api.base.ProjectSpecificMethods@369f73a2]" name="setUpClass" is-config="true" duration-ms="269" started-at="2019-09-08T08:24:21Z" finished-at="2019-09-08T08:24:21Z">
+        <test-method status="PASS" signature="setexcelfilename()[pri:0, instance:com.leafBot.testcases.testcase@2b2948e2]" name="setexcelfilename" is-config="true" duration-ms="1" started-at="2019-09-08T10:14:59Z" finished-at="2019-09-08T10:14:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setexcelfilename -->
+        <test-method status="PASS" signature="setReportvalue()[pri:0, instance:com.leafBot.testcases.testcase@2b2948e2]" name="setReportvalue" is-config="true" duration-ms="0" started-at="2019-09-08T10:14:59Z" finished-at="2019-09-08T10:14:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setReportvalue -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.leafBot.testcases.testcase@2b2948e2]" name="setUpClass" is-config="true" duration-ms="259" started-at="2019-09-08T10:14:59Z" finished-at="2019-09-08T10:15:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="report()[pri:0, instance:com.leafBot.testng.api.base.ProjectSpecificMethods@369f73a2]" name="report" is-config="true" duration-ms="5" started-at="2019-09-08T08:24:21Z" finished-at="2019-09-08T08:24:21Z">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[testName cannot be null or empty]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: testName cannot be null or empty
-at com.aventstack.extentreports.ExtentTest.<init>(ExtentTest.java:80)
-at com.aventstack.extentreports.ExtentTest.<init>(ExtentTest.java:100)
-at com.aventstack.extentreports.ExtentReports.createTest(ExtentReports.java:238)
-at utils.Reporter.report(Reporter.java:37)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+        <test-method status="PASS" signature="report()[pri:0, instance:com.leafBot.testcases.testcase@2b2948e2]" name="report" is-config="true" duration-ms="17" started-at="2019-09-08T10:15:00Z" finished-at="2019-09-08T10:15:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.leafBot.testng.api.base.ProjectSpecificMethods@369f73a2]" name="tearDownClass" is-config="true" duration-ms="6" started-at="2019-09-08T08:24:21Z" finished-at="2019-09-08T08:24:21Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.leafBot.testcases.testcase@2b2948e2]" name="beforeMethod" is-config="true" duration-ms="8039" started-at="2019-09-08T10:15:01Z" finished-at="2019-09-08T10:15:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="runtest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.leafBot.testcases.testcase@2b2948e2]" name="runtest" duration-ms="21330" started-at="2019-09-08T10:15:09Z" data-provider="fetchdata" finished-at="2019-09-08T10:15:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Demosalesmanager]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[crmsfa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Company1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[antonyl]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[kl]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runtest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.leafBot.testcases.testcase@2b2948e2]" name="afterMethod" is-config="true" duration-ms="2221" started-at="2019-09-08T10:15:31Z" finished-at="2019-09-08T10:15:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.leafBot.testcases.testcase@2b2948e2]" name="beforeMethod" is-config="true" duration-ms="6010" started-at="2019-09-08T10:15:33Z" finished-at="2019-09-08T10:15:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="runtest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.leafBot.testcases.testcase@2b2948e2]" name="runtest" duration-ms="18875" started-at="2019-09-08T10:15:39Z" data-provider="fetchdata" finished-at="2019-09-08T10:15:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DemoCSR]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[crmsfa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[company2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[antonyl]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[mk]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runtest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.leafBot.testcases.testcase@2b2948e2]" name="afterMethod" is-config="true" duration-ms="2173" started-at="2019-09-08T10:15:58Z" finished-at="2019-09-08T10:16:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.leafBot.testcases.testcase@2b2948e2]" name="tearDownClass" is-config="true" duration-ms="10" started-at="2019-09-08T10:16:00Z" finished-at="2019-09-08T10:16:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="stopReport()[pri:0, instance:com.leafBot.testng.api.base.ProjectSpecificMethods@369f73a2]" name="stopReport" is-config="true" duration-ms="9" started-at="2019-09-08T08:24:21Z" finished-at="2019-09-08T08:24:21Z">
+        <test-method status="PASS" signature="stopReport()[pri:0, instance:com.leafBot.testcases.testcase@2b2948e2]" name="stopReport" is-config="true" duration-ms="969" started-at="2019-09-08T10:16:00Z" finished-at="2019-09-08T10:16:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopReport -->
-      </class> <!-- com.leafBot.testng.api.base.ProjectSpecificMethods -->
+      </class> <!-- com.leafBot.testcases.testcase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

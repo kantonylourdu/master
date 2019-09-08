@@ -16,18 +16,10 @@ public class ProjectSpecificMethods extends SeleniumBase {
 	
 	@DataProvider(name = "fetchdata")
 	public Object[][] fetchData() throws IOException {
-		return DataLibrary.readExcelData("TC001");
+		return DataLibrary.readExcelData(excelFileName);
 	}	
 	
-	@BeforeClass
-	public void setReportvalue() 
-	{
-		 testcaseName="TC001";
-		  testcaseDec="TestLeads";
-		  author="anonyl";
-		  category="smoke";
-		
-	}
+	
   
   @BeforeMethod
   public void beforeMethod() {

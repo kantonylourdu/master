@@ -5,13 +5,15 @@
     <classes>
       <class name="com.leafBot.testcases.testcase">
         <methods>
-          <include name="runtest"/>
+          <include name="runtest" invocation-numbers="0"/>
           <include name="stopReport"/>
+          <include name="setReportvalue"/>
           <include name="beforeMethod"/>
           <include name="setUpClass"/>
           <include name="report"/>
           <include name="afterMethod"/>
           <include name="startReport"/>
+          <include name="setexcelfilename"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- com.leafBot.testcases.testcase -->
